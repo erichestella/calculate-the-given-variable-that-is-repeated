@@ -15,7 +15,10 @@ start = 0
 #this function identify how many of the variable are repeated
 while True:
     numbers = type_name.find(find, start)
-    if numbers == 1:
+    if numbers == -1:
         break
     counting_variable += 1
     start = numbers + len(find)
+
+#it displays the result of how many times the given is repeated
+print('RESULT: \n The given variable', find, 'appears to have repeated', counting_variable, 'times')
