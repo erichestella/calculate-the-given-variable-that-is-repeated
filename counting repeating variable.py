@@ -11,3 +11,11 @@ find = 'Nicole'
 #these are the variable that defines the counting of the variable 
 counting_variable = 0 
 start = 0
+
+#this function identify how many of the variable are repeated
+while True:
+    numbers = type_name.find(find, start)
+    if numbers == 1:
+        break
+    counting_variable += 1
+    start = numbers + len(find)
